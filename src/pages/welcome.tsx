@@ -1,11 +1,10 @@
-import { Component } from "mithril";
-import Button from "../components/button.tsx";
-import "../styles/app.css";
+import m from "mithril";
+import Button from "../components/Button.tsx";
 
 // Primary layout component
-const Welcome: Component = {
-    view: () => (
-        <div class="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 flex flex-col">
+const Welcome: m.Component = {
+    view: () => 
+        (<div class="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 flex flex-col">
             <header class="container mx-auto px-4 py-6">
                 <nav class="flex justify-between items-center">
                     <h1 class="text-2xl font-bold text-white">BrandLogo</h1>
@@ -38,8 +37,7 @@ const Welcome: Component = {
                     <p>© 2025 Your Company. All rights reserved.</p>
                 </div>
             </footer>
-        </div>
-    ),
+        </div>)
 };
 
 export default Welcome;
