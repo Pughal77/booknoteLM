@@ -1,9 +1,9 @@
 {
     "compilerOptions": {
         "target": "ESNext",
-        "module": "ESNext",
+        "module": "nodenext",
         "lib": ["ESNext", "DOM"],
-        "moduleResolution": "Node",
+        "moduleResolution": "nodenext", // or 'node16' or 'bundler'
         "strict": true,
         "sourceMap": true,
         "resolveJsonModule": true,
@@ -12,6 +12,7 @@
         "noUnusedLocals": true,
         "noUnusedParameters": true,
         "noImplicitReturns": true,
-        "jsx": "preserve"
+        "jsx": "preserve",
+        "allowImportingTsExtensions": true
     }
 }

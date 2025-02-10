@@ -1,11 +1,8 @@
 import m from "mithril";
-
-const HelloWorld: m.Component = {
-    view: () => <div>Hello, World!</div>,
-};
+import Welcome from "./pages/welcome.tsx";
 
 const appElement = document.getElementById("app");
 
 if (appElement) {
-    m.mount(appElement, HelloWorld);
+    m.mount(appElement, Welcome);
 }
