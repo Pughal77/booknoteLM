@@ -1,4 +1,4 @@
-import { Component } from "mithril";
+import m from "mithril";
 
 interface ButtonAttrs {
     label: string;
@@ -6,7 +6,7 @@ interface ButtonAttrs {
 }
 
 // Reusable Button component (subcomponent)
-const Button: Component<ButtonAttrs> = {
+const Button: m.Component<ButtonAttrs> = {
     view({ attrs: { label, onclick } }) {
         return (
             <button

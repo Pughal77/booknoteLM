@@ -3,11 +3,15 @@ import Button from "../components/Button.tsx";
 
 // Primary layout component
 const Welcome: m.Component = {
-    view: () => 
-        (<div class="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 flex flex-col">
+    view: () => (
+        <div class="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 flex flex-col">
             <header class="container mx-auto px-4 py-6">
                 <nav class="flex justify-between items-center">
-                    <h1 class="text-2xl font-bold text-white">BrandLogo</h1>
+                    <img
+                        src="src/assets/notebook-logo.svg"
+                        alt="Brand Logo"
+                        class="h-8"
+                    />
                     <button class="text-gray-300 hover:text-white transition-colors">
                         Menu
                     </button>
@@ -37,7 +41,8 @@ const Welcome: m.Component = {
                     <p>© 2025 Your Company. All rights reserved.</p>
                 </div>
             </footer>
-        </div>)
+        </div>
+    ),
 };
 
 export default Welcome;
