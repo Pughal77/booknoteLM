@@ -30,7 +30,10 @@ const Welcome: m.Component = {
                         </p>
                         <Button
                             label="Get Started"
-                            onclick={() => console.log("CTA clicked")}
+                            onclick={() => {
+                                console.log("Button clicked");
+                                m.route.set("/start");
+                            }}
                         />
                     </div>
                 </div>
